@@ -1,0 +1,68 @@
+-- Made By Mod_XERTIX
+
+local BlekLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/laderite/bleklib/main/library.lua"))()
+
+local win = BlekLib:Create({
+    Name = "Game Not Supported",
+    StartupSound = {
+        Toggle = false,
+        SoundID = "rbxassetid://6958727243",
+        TimePosition = 1
+    }
+})
+
+local maintab = win:Tab('Info')
+local uitab = win:Tab('UI')
+
+uitab:Button('Destroy GUI', function()
+    win:Exit()
+end)
+
+maintab:Label('If you see that, your script is not supporting the game you playing rn')
+maintab:Button('Execute the script', function()
+
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/Zinzo"))()
+local window = library:window("Brookhaven")
+local folder = window:folder("Scripts")
+folder:button({
+        name = "IceHub",
+        callback = function()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMael7/NewIceHub/main/Brookhaven"))()
+        end})
+
+		folder:button({
+        name = "RedzHub",
+        callback = function()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/HR/main/REDzHUBeng"))()
+        end})
+
+
+local folder1 = window:folder("Admin Script")
+
+folder1:button({
+        name = "Infinite Yield",
+        callback = function()
+            loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+        end})
+		
+		folder1:button({
+        name = "CMDX",
+        callback = function()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source",true))()
+        end})
+
+		folder1:button({
+        name = "Nameless Admin",
+        callback = function()
+            loadstring(game:HttpGet('https://raw.githubusercontent.com/FilteringEnabled/NamelessAdmin/main/Source'))()
+        end})
+
+local folder2 = window:folder("Credit")
+
+folder2:button({
+	name = "Made By Mod_XERTIX",
+	callback = function()
+		print("haha yes")
+		
+	end})
+end)
