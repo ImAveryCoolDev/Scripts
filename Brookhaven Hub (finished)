@@ -1,0 +1,6 @@
+local gameid = game.PlaceId
+if(gameid == 4924922222) then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ImAveryCoolDev/Scripts/main/Brookhaven%20Hub"))()
+else
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ImAveryCoolDev/Scripts/main/Game%20not%20supported%20(for%20brookhaven%20script)"))()
+end
